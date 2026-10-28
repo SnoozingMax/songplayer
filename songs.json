@@ -1,8 +1,9 @@
 [
   {
     "title": "Temporary",
-    "artist": "itshiftyz",
+    "artist": "shiftyz",
     "duration": "2:47",
-    "file": "songs/temporary.mp3"
+    "file": "songs/temporary.mp3",
+    "cover": "covers/temporary.jpg"
   }
 ]
