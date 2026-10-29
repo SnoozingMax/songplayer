@@ -26,19 +26,23 @@
   }
   * { box-sizing:border-box; -webkit-tap-highlight-color:transparent; }
   html,body { margin:0; min-height:100%; }
-  body { background:var(--bg); color:var(--ink); font:15px/1.45 Inter,-apple-system,"Segoe UI",sans-serif; -webkit-font-smoothing:antialiased; padding-bottom:calc(140px + env(safe-area-inset-bottom)); transition:background .4s, color .4s; }
+  body { background:transparent; color:var(--ink); font:15px/1.45 Inter,-apple-system,"Segoe UI",sans-serif; -webkit-font-smoothing:antialiased; padding-bottom:calc(140px + env(safe-area-inset-bottom)); transition:background .4s, color .4s; }
   button { font:inherit; cursor:pointer; color:inherit; }
 
-  /* ambient background: blurred cover art + soft blobs */
-  .ambient { position:fixed; inset:0; z-index:-1; overflow:hidden; pointer-events:none; }
-  .ambient .art { position:absolute; inset:-15%; background-size:cover; background-position:center; filter:blur(80px) saturate(1.6); opacity:0; transform:scale(1.1); transition:opacity 1.2s ease, transform 1.6s ease; }
-  .ambient .art.show { opacity:var(--art-opacity); transform:scale(1); }
-  .blob { position:absolute; border-radius:50%; filter:blur(70px); opacity:.5; animation:drift 22s ease-in-out infinite alternate; }
-  .blob.b1 { width:46vw; height:46vw; left:-10vw; top:-12vw; background:#f6c7a8; }
-  .blob.b2 { width:40vw; height:40vw; right:-8vw; top:20vh; background:#c9d6f2; animation-duration:28s; }
-  .blob.b3 { width:36vw; height:36vw; left:30vw; bottom:-14vw; background:#e9d3ef; animation-duration:32s; }
-  :root[data-theme="dark"] .blob { opacity:.18; }
-  @keyframes drift { from { transform:translate(0,0) scale(1); } to { transform:translate(4vw,3vh) scale(1.12); } }
+  /* ambient background: small blurred cover scaled up (Safari-safe) + gradient glow */
+  html { background:var(--bg); }
+  .ambient { position:fixed; inset:0; z-index:-1; overflow:hidden; pointer-events:none;
+    background:
+      radial-gradient(60vmax 60vmax at 8% 0%, var(--g1), transparent 60%),
+      radial-gradient(55vmax 55vmax at 100% 40%, var(--g2), transparent 60%),
+      radial-gradient(50vmax 50vmax at 40% 110%, var(--g3), transparent 60%),
+      var(--bg); transition:background .4s; }
+  :root { --g1:rgba(246,199,168,.55); --g2:rgba(201,214,242,.55); --g3:rgba(233,211,239,.55); }
+  :root[data-theme="dark"] { --g1:rgba(246,199,168,.08); --g2:rgba(201,214,242,.07); --g3:rgba(233,211,239,.06); }
+  .ambient .art { position:absolute; left:50%; top:50%; width:48px; height:48px; margin:-24px 0 0 -24px;
+    background-size:cover; background-position:center; filter:blur(4px) saturate(1.6);
+    transform:scale(var(--s,40)); opacity:0; transition:opacity 1.2s ease; will-change:opacity; }
+  .ambient .art.show { opacity:var(--art-opacity); }
 
   .wrap { max-width:960px; margin:0 auto; padding:0 20px; }
 
@@ -146,8 +150,7 @@
 </head>
 <body>
 <div class="ambient">
-  <div class="blob b1"></div><div class="blob b2"></div><div class="blob b3"></div>
-  <div class="art" id="artA"></div><div class="art" id="artB"></div>
+    <div class="art" id="artA"></div><div class="art" id="artB"></div>
 </div>
 
 <div class="wrap">
@@ -209,6 +212,8 @@ $('theme').onclick = () => {
 
 const fmt = s => { s = Math.floor(s || 0); return Math.floor(s / 60) + ':' + String(s % 60).padStart(2, '0'); };
 const esc = s => String(s ?? '').replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+const fitArt = () => document.documentElement.style.setProperty('--s', (Math.max(innerWidth, innerHeight) / 48 * 1.4).toFixed(2));
+fitArt(); addEventListener('resize', fitArt);
 const setRange = (el, v) => { el.value = v; el.style.setProperty('--p', (v / el.max * 100) + '%'); };
 
 fetch('songs.json', { cache:'no-cache' }).then(r => r.json()).then(list => {
