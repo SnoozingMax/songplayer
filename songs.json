@@ -66,5 +66,12 @@
     "duration": "2:47",
     "file": "songs/thats-so-true.mp3",
     "cover": "covers/thats-so-true.jpeg"
+  },
+  {
+    "title": "MAMMAMIA",
+    "artist": "Maneskin",
+    "duration": "3:07",
+    "file": "songs/mammamia-maneskin.mp3",
+    "cover": "covers/maneskin.jpg"
   }
 ]
