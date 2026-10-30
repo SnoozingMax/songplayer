@@ -52,5 +52,12 @@
     "duration": "2:54",
     "file": "songs/cupid-twinversion.mp3",
     "cover": "covers/cupidcover.jpeg"
+  },
+  {
+    "title": "Black Beatles",
+    "artist": "Rae Sremmurd",
+    "duration": "4:52",
+    "file": "songs/black-beatles.mp3",
+    "cover": "covers/black-beatles.jpeg"
   }
 ]
