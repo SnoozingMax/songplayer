@@ -87,5 +87,12 @@
     "duration": "1:47",
     "file": "songs/fourwheeler.mp3",
     "cover": "covers/fourwheeler.JPG"
+  },
+  {
+    "title": "Timeless Interlude",
+    "artist": "Bryson Tiller",
+    "duration": "2:59",
+    "file": "songs/timeless-interlude.mp3",
+    "cover": "covers/timeless-interlude.JPG"
   }
 ]
