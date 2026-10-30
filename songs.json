@@ -59,5 +59,12 @@
     "duration": "4:52",
     "file": "songs/black-beatles.mp3",
     "cover": "covers/black-beatles.jpeg"
+  },
+  {
+    "title": "That's So True",
+    "artist": "Gracie Abrams",
+    "duration": "2:47",
+    "file": "songs/thats-so-true.mp3",
+    "cover": "covers/thats-so-true.jpeg"
   }
 ]
