@@ -12,5 +12,12 @@
     "duration": "2:27",
     "file": "songs/runaway-baby.mp3",
     "cover": "covers/runawaybabycover.jpg"
+  },
+  {
+    "title": "Flamewall",
+    "artist": "Camellia",
+    "duration": "6:50",
+    "file": "songs/flamewall.mp3",
+    "cover": "covers/flamewall.jpg"
   }
 ]
