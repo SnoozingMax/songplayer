@@ -19,5 +19,12 @@
     "duration": "6:50",
     "file": "songs/flamewall.mp3",
     "cover": "covers/flamewall.jpg"
+  },
+  {
+    "title": "Headlines (Explicit)",
+    "artist": "Drake",
+    "duration": "4:04",
+    "file": "songs/headlines-explicit.mp3",
+    "cover": "covers/headlinescover.jpg"
   }
 ]
