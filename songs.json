@@ -80,5 +80,12 @@
     "duration": "2:31",
     "file": "songs/sodapop.mp3",
     "cover": "covers/sodapop.PNG"
+  },
+  {
+    "title": "four wheeler (Explicit)",
+    "artist": "yuno miles",
+    "duration": "1:47",
+    "file": "songs/fourwheeler.mp3",
+    "cover": "covers/fourwheeler.JPG"
   }
 ]
