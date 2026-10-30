@@ -94,5 +94,12 @@
     "duration": "2:59",
     "file": "songs/timeless-interlude.mp3",
     "cover": "covers/timeless-interlude.JPG"
+  },
+  {
+    "title": "Dust",
+    "artist": "Drake",
+    "duration": "3:09",
+    "file": "songs/dust-drake.mp3",
+    "cover": "covers/dust-drake.JPG"
   }
 ]
