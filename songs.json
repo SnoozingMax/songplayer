@@ -26,5 +26,11 @@
     "duration": "4:04",
     "file": "songs/headlines-explicit.mp3",
     "cover": "covers/headlinescover.jpg"
+  },
+  {
+    "title": "C o n t r o l",
+    "artist": "PARTYNEXTDOOR",
+    "duration": "4:22",
+    "file": "control/my-song.mp3"
   }
-]
+[
