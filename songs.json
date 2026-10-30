@@ -45,5 +45,12 @@
     "duration": "3:02",
     "file": "songs/shiawase-vip.mp3",
     "cover": "covers/shiawase.jpeg"
+  },
+  {
+    "title": "Cupid (Twin Version)",
+    "artist": "FIFTY FIFTY",
+    "duration": "2:54",
+    "file": "songs/cupid-twinversion.mp3",
+    "cover": "covers/cupidcover.jpg"
   }
 ]
