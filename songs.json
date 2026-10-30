@@ -5,5 +5,12 @@
     "duration": "2:47",
     "file": "songs/temporary.mp3",
     "cover": "covers/temporary.jpg"
+  },
+  {
+    "title": "Runaway Baby",
+    "artist": "Bruno Mars",
+    "duration": "2:27",
+    "file": "songs/runaway-baby.mp3",
+    "cover": "covers/runawaybabycover.jpg"
   }
 ]
