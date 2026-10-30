@@ -243,21 +243,25 @@ fetch('songs.json', { cache:'no-cache' }).then(r => r.json()).then(list => {
 
 let lastQ = null;
 $('q').oninput = () => render();
+const byName = (a, b) => (a || '').localeCompare(b || '', undefined, { sensitivity:'base', numeric:true });
 function render() {
   const q = $('q').value.trim().toLowerCase();
   const animate = q !== lastQ; lastQ = q;
   const rows = songs.map((s, i) => ({ s, i })).filter(({ s }) => !q || [s.title, s.artist, s.album].join(' ').toLowerCase().includes(q));
   if (!rows.length) { $('list').innerHTML = `<div class="empty">${songs.length ? 'No matches' : 'No songs yet'}</div>`; return; }
-  rows.sort((x, y) => (x.s.title || '').localeCompare(y.s.title || '', undefined, { sensitivity:'base', numeric:true }));
+  const groups = new Map();
+  rows.forEach(r => { const k = r.s.artist || 'Unknown'; (groups.get(k) || groups.set(k, []).get(k)).push(r); });
+  const sorted = [...groups].sort((a, b) => byName(a[0], b[0]));
   let n = 0;
-  $('list').innerHTML = rows.map(({ s, i }) => `
+  $('list').innerHTML = sorted.map(([artist, list]) => `
+    <section class="group"><h2>${esc(artist)}</h2>${list.sort((x, y) => byName(x.s.title, y.s.title)).map(({ s, i }) => `
       <div class="track ${i === current ? 'active' : ''}" data-i="${i}" style="--i:${animate ? n++ : 0};${animate ? '' : 'animation:none'}">
         <div class="cover">${imgTag(s, 'loading="lazy"')}<div class="ov">${i === current
           ? '<div class="eq"><i></i><i></i><i></i></div>'
           : '<svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>'}</div></div>
-        <div style="min-width:0"><div class="t">${esc(s.title)}</div><div class="a">${esc(s.artist)}${s.album ? ' · ' + esc(s.album) : ''}</div></div>
+        <div style="min-width:0"><div class="t">${esc(s.title)}</div><div class="a">${esc(s.album || s.artist)}</div></div>
         <div class="d">${s.duration || ''}</div>
-      </div>`).join('');
+      </div>`).join('')}</section>`).join('');
   $('list').querySelectorAll('.track').forEach(el => el.onclick = () => play(+el.dataset.i));
   syncPaused();
 }
@@ -287,7 +291,7 @@ function play(i) {
   }
   render();
 }
-const order = () => songs.map((_, i) => i).sort((a, b) => (songs[a].title || '').localeCompare(songs[b].title || '', undefined, { sensitivity:'base', numeric:true }));
+const order = () => songs.map((_, i) => i).sort((a, b) => byName(songs[a].artist || 'Unknown', songs[b].artist || 'Unknown') || byName(songs[a].title, songs[b].title));
 function step(d) { const o = order(); const at = o.indexOf(current); play(o[(at + d + o.length) % o.length]); }
 function next() {
   if (!songs.length) return;
