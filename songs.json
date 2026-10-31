@@ -157,5 +157,12 @@
     "duration": "3:04",
     "file": "songs/blablabla.mp3",
     "cover": "covers/maneskin.JPG"
+  },
+  {
+    "title": "BABY SAID",
+    "artist": "Maneskin",
+    "duration": "2:44",
+    "file": "songs/babysaid.mp3",
+    "cover": "covers/maneskin.JPG"
   }
 ]
