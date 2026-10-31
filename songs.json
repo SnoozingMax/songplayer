@@ -143,5 +143,12 @@
     "duration": "2:48",
     "file": "songs/gossip.mp3",
     "cover": "covers/maneskin.JPG"
+  },
+  {
+    "title": "TIMEZONE",
+    "artist": "Maneskin",
+    "duration": "2:59",
+    "file": "songs/timezone.mp3",
+    "cover": "covers/maneskin.JPG"
   }
 ]
