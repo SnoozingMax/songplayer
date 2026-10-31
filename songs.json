@@ -108,5 +108,12 @@
     "duration": "1:54",
     "file": "songs/bedrott.mp3",
     "cover": "covers/bedrott.JPG"
+  },
+  {
+    "title": "dawn",
+    "artist": "Dusky Demise",
+    "duration": "1:54",
+    "file": "songs/dawn.mp3",
+    "cover": "covers/bedrott.JPG"
   }
 ]
