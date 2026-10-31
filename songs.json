@@ -115,5 +115,12 @@
     "duration": "1:54",
     "file": "songs/dawn.mp3",
     "cover": "covers/bedrott.JPG"
+  },
+  {
+    "title": "otherside",
+    "artist": "Lena Raine and Minecraft",
+    "duration": "3:16",
+    "file": "songs/otherside.mp3",
+    "cover": "covers/otherside.jpeg"
   }
 ]
