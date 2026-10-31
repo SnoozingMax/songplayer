@@ -178,5 +178,12 @@
     "duration": "2:47",
     "file": "songs/feel.mp3",
     "cover": "covers/maneskin.JPG"
+  },
+  {
+    "title": "DON'T WANNA SLEEP",
+    "artist": "Maneskin",
+    "duration": "2:36",
+    "file": "songs/dontwannasleep.mp3",
+    "cover": "covers/maneskin.JPG"
   }
 ]
