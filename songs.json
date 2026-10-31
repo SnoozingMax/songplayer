@@ -129,5 +129,12 @@
     "duration": "3:20",
     "file": "songs/isolation.mp3",
     "cover": "covers/isolation.jpeg"
+  },
+  {
+    "title": "OWN MY MIND",
+    "artist": "Maneskin",
+    "duration": "3:12",
+    "file": "songs/ownmymind.mp3",
+    "cover": "covers/maneskin.JPG"
   }
 ]
