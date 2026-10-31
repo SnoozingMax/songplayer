@@ -185,5 +185,12 @@
     "duration": "2:36",
     "file": "songs/dontwannasleep.mp3",
     "cover": "covers/maneskin.JPG"
+  },
+  {
+    "title": "KOOL KIDS",
+    "artist": "Maneskin",
+    "duration": "2:43",
+    "file": "songs/koolkids.mp3",
+    "cover": "covers/maneskin.JPG"
   }
 ]
