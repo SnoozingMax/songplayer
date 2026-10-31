@@ -164,5 +164,12 @@
     "duration": "2:44",
     "file": "songs/babysaid.mp3",
     "cover": "covers/maneskin.JPG"
+  },
+  {
+    "title": "GASOLINE",
+    "artist": "Maneskin",
+    "duration": "3:41",
+    "file": "songs/gasoline.mp3",
+    "cover": "covers/maneskin.JPG"
   }
 ]
