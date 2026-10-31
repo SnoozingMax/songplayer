@@ -150,5 +150,12 @@
     "duration": "2:59",
     "file": "songs/timezone.mp3",
     "cover": "covers/maneskin.JPG"
+  },
+  {
+    "title": "BLA BLA BLA",
+    "artist": "Maneskin",
+    "duration": "3:04",
+    "file": "songs/blablabla.mp3",
+    "cover": "covers/maneskin.JPG"
   }
 ]
