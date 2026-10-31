@@ -192,5 +192,12 @@
     "duration": "2:43",
     "file": "songs/koolkids.mp3",
     "cover": "covers/maneskin.JPG"
+  },
+  {
+    "title": "IF NOT FOR YOU",
+    "artist": "Maneskin",
+    "duration": "3:14",
+    "file": "songs/ifnotforyou.mp3",
+    "cover": "covers/maneskin.JPG"
   }
 ]
