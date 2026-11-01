@@ -199,5 +199,12 @@
     "duration": "3:14",
     "file": "songs/ifnotforyou.mp3",
     "cover": "covers/maneskin.JPG"
+  },
+  {
+    "title": "505",
+    "artist": "Arctic Monkeys",
+    "duration": "4:13",
+    "file": "songs/five.mp3",
+    "cover": "covers/five.jpg"
   }
 ]
