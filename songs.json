@@ -241,5 +241,12 @@
     "duration": "4:07",
     "file": "songs/theloneliest.mp3",
     "cover": "covers/maneskin.JPG"
+  },
+  {
+    "title": "AetheR Forest",
+    "artist": "Nstryder",
+    "duration": "3:04",
+    "file": "songs/aetherforest.mp3",
+    "cover": "covers/aether.jpg"
   }
 ]
