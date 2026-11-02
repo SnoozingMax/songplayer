@@ -234,5 +234,12 @@
     "duration": "2:28",
     "file": "songs/supermodel.mp3",
     "cover": "covers/maneskin.JPG"
+  },
+  {
+    "title": "THE LONELIEST",
+    "artist": "Maneskin",
+    "duration": "4:07",
+    "file": "songs/theloneliest.mp3",
+    "cover": "covers/maneskin.JPG"
   }
 ]
