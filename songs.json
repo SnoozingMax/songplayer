@@ -227,5 +227,12 @@
     "duration": "2:30",
     "file": "songs/readyourdiary.mp3",
     "cover": "covers/maneskin.JPG"
+  },
+  {
+    "title": "SUPERMODEL",
+    "artist": "Maneskin",
+    "duration": "2:28",
+    "file": "songs/supermodel.mp3",
+    "cover": "covers/maneskin.JPG"
   }
 ]
