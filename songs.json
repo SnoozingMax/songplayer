@@ -206,5 +206,12 @@
     "duration": "4:13",
     "file": "songs/five.mp3",
     "cover": "covers/five.jpg"
+  },
+  {
+    "title": "That's What I Like",
+    "artist": "Bruno Mars",
+    "duration": "3:26",
+    "file": "songs/thatswhatilike.mp3",
+    "cover": "covers/brunomagic.jpg"
   }
 ]
