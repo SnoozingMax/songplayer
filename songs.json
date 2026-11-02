@@ -213,5 +213,12 @@
     "duration": "3:26",
     "file": "songs/thatswhatilike.mp3",
     "cover": "covers/brunomagic.jpg"
+  },
+  {
+    "title": "Ascension to Heaven",
+    "artist": "xi",
+    "duration": "5:08",
+    "file": "songs/ascensiontoheaven.mp3",
+    "cover": "covers/ascension.jpg"
   }
 ]
