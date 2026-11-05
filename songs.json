@@ -269,5 +269,11 @@
     "duration": "3:46",
     "file": "songs/secondhand.mp3",
     "cover": "covers/dontoliver.jpeg"
+  },
+  {
+    "title": "M a k e I t T o T h e M o r n i n g",
+    "artist": "PARTYNEXTDOOR",
+    "duration": "2:49",
+    "file": "songs/morningnext.mp3"
   }
 ]
