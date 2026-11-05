@@ -303,5 +303,12 @@
     "duration": "5:54",
     "file": "songs/tele.mp3",
     "cover": "covers/tele.jpeg"
+  },
+  {
+    "title": "keep me going (BIRDBRAIN)",
+    "artist": "slayr",
+    "duration": "2:10",
+    "file": "songs/keepmegoing.mp3",
+    "cover": "covers/keepmegoing.jpeg"
   }
 ]
