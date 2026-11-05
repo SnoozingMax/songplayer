@@ -262,5 +262,12 @@
     "duration": "4:00",
     "file": "songs/iwanttoknowyou.mp3",
     "cover": "covers/iwanttoknow.jpeg"
+  },
+  {
+    "title": "Secondhand (ft. Rema)",
+    "artist": "Don Toliver",
+    "duration": "3:46",
+    "file": "songs/secondhand.mp3",
+    "cover": "covers/dontoliver.jpeg"
   }
 ]
