@@ -275,5 +275,12 @@
     "artist": "PARTYNEXTDOOR",
     "duration": "2:49",
     "file": "songs/morningnext.mp3"
+  },
+  {
+    "title": "Final Battle",
+    "artist": "Waterflame",
+    "duration": "5:23",
+    "file": "songs/finalbattle.mp3",
+    "cover": "covers/finalbattle.jpeg"
   }
 ]
