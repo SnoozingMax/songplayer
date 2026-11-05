@@ -282,5 +282,12 @@
     "duration": "5:23",
     "file": "songs/finalbattle.mp3",
     "cover": "covers/finalbattle.jpeg"
+  },
+  {
+    "title": "OUT WEST",
+    "artist": "Travis Scott",
+    "duration": "2:37",
+    "file": "songs/outwest.mp3",
+    "cover": "covers/outwest.jpg"
   }
 ]
