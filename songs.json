@@ -289,5 +289,12 @@
     "duration": "2:37",
     "file": "songs/outwest.mp3",
     "cover": "covers/outwest.jpg"
+  },
+  {
+    "title": "Slow Down (12 Version)",
+    "artist": "Bobby V",
+    "duration": "3:53",
+    "file": "songs/slowdown.mp3",
+    "cover": "covers/slowdown.jpeg"
   }
 ]
