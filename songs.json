@@ -248,5 +248,12 @@
     "duration": "3:04",
     "file": "songs/aetherforest.mp3",
     "cover": "covers/aether.jpg"
+  },
+  {
+    "title": "HONEY (ARE YOU COMING)",
+    "artist": "Maneskin",
+    "duration": "2:48",
+    "file": "songs/honeyare.mp3",
+    "cover": "covers/maneksin.JPG"
   }
 ]
